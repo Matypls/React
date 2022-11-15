@@ -14,7 +14,7 @@ function App() {
           <ListaNav text="Servicios" text1="Electrónica" text2="Gaming"/>        
       </header>
       <main>
-        <ItemListContainer greeting="Steelseries 350" imagen='https://http2.mlstatic.com/D_NQ_NP_759949-MLA51150188892_082022-V.webp'/>
+        <ItemListContainer />
       </main>
     </body>
   );

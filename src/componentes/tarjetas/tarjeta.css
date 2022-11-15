@@ -1,12 +1,32 @@
 .TarjetaContainer{
     border: 2px solid black;
     width: fit-content;
-    margin: 20px;
+    margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .ImagenTarjeta{
     margin: 15px;
+}
+
+.Contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ImagenItem{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.BotonDetalle{
+    padding:5px 40px;
+    margin: 20px;
+    background-color: rgb(174, 165, 165);
+    border-radius: 20px;
 }
