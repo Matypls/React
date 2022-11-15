@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *{
   padding: 0;
   margin: 0;
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background-color: rgb(233, 229, 229);
+  font-family: 'Lato', sans-serif;
 }
 
-.Titulo{
+footer{
   text-align: center;
-  color: black;
+  font-size: 25px;
+  margin: 10px;
 }
 

@@ -1,23 +1,29 @@
 import React from 'react';
 import CartWidgets from './CartWidgets';
-import './navBar.css'
+import './navBar.css';
+import {Link} from 'react-router-dom';
 
 function ListaNav(props) {
   return (
-    <nav>
-      <ul>        
-        <li>
-          <a href="#">{props.text}</a>          
-        </li>
-        <li>
-          <a href="#">{props.text1}</a>          
-        </li>
-        <li>
-          <a href="#">{props.text2}</a>          
-        </li>
-        <CartWidgets/>
-      </ul>
-    </nav>
+    <div>
+      <nav className="App-header">
+        <Link to="/">
+          <h1 className="Titulo"> Tienda Yogachaiser</h1>      
+        </Link>  
+        <ul>        
+          <li>
+            <Link to="/category/Servicios">{props.text}</Link >          
+          </li>
+          <li>
+            <Link to="/category/Electrónica">{props.text1}</Link >          
+          </li>
+          <li>
+            <Link to="/category/Gaming">{props.text2}</Link >          
+          </li>
+          <CartWidgets/>
+        </ul>
+      </nav>
+    </div>
   )
 }
 

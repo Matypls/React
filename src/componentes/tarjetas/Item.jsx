@@ -1,14 +1,19 @@
 import React from 'react'
 import "./tarjeta.css"
 import Boton from './Boton'
+import {Link} from 'react-router-dom'
 
-function Item(props) {
+function Item(product) {
+
+  const urlItem = `/item/${product.id}`
   return (
     <div className='TarjetaContainer'>
-        <img className='ImagenItem' src={props.imagen} alt="Imagen Producto" />
-        <h3>{props.nombre}</h3>
-        <p>{props.importe}</p>
-        <Boton/>
+        <img className='ImagenItem' src={product.imagen} alt="Imagen Producto" />
+        <h3>{product.nombre}</h3>
+        <p>{product.importe}</p>
+        <Link to={urlItem}>
+          <Boton/>
+        </Link>
     </div>
   )
 }

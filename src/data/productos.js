@@ -41,7 +41,7 @@ const productos = [
     id: 6, 
     imagen: "https://s1.eestatic.com/2022/03/24/actualidad/659694554_222967910_864x486.jpg"},
 
-    {categoria: "Servicios", 
+    {categoria: "Electrónica", 
     nombre: "Notebook Amd", 
     descripcion: "Procesador: Ryzen 3 4300u - Ram: 8gb 2133mhz - HDD: 1TB - Bateria: 4 celdas 2200mAh", 
     importe: "$120000", 

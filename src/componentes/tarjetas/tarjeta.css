@@ -6,6 +6,18 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 11px 12px 20px 4px black;
+}
+
+.TarjetaContainer h3{
+    font-size: 20px;
+    margin: 10px;
+}
+
+.TarjetaContainer p{
+    font: 15px;
+    margin: 10px;
 }
 
 .ImagenTarjeta{
@@ -22,6 +34,7 @@
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 .BotonDetalle{
@@ -29,4 +42,29 @@
     margin: 20px;
     background-color: rgb(174, 165, 165);
     border-radius: 20px;
+    box-shadow: inset 0px 0px 9px 1px black;
+}
+
+.TarjetaDetalle{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.TarjetaDetalle h3{
+    font-size: 25px;
+}
+
+.TarjetaDetalle p{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.TarjetaDetalle h4{
+    font-size: 20px;
 }
