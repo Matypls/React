@@ -12,7 +12,7 @@ function Item(product) {
         <h3>{product.nombre}</h3>
         <p>{product.importe}</p>
         <Link to={urlItem}>
-          <Boton/>
+          <Boton children="detalle"/>
         </Link>
     </div>
   )

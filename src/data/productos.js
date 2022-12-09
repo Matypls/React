@@ -4,6 +4,7 @@ const productos = [
     descripcion: "Escucha música sin anuncios - Reproducí tus canciones en cualquier lugar, incluso sin conexión - reproducción ondemand - Prepaga o suscríbete", 
     importe: "$485", 
     id: 1, 
+    stock: 1,
     imagen: "https://www.scdn.co/i/_global/open-graph-default.png" },
 
     {categoria: "Servicios", 
@@ -11,6 +12,7 @@ const productos = [
     descripcion: "2 cuentas premium para parejas que viven juntas - Reproducción de música sin anuncions, sin conexión y ondemand - Prepaga o suscríbete", 
     importe: "$677", 
     id: 2, 
+    stock: 2,
     imagen: "https://www.scdn.co/i/_global/open-graph-default.png"},
 
     {categoria: "Servicios", 
@@ -18,6 +20,7 @@ const productos = [
     descripcion: "6 cuentas premium para familias que viven juntas - bloqueá la música explícita - reproducción de música sin anuncios, sin conexión y ondeman - spotify kids una aplicación independiente creada solo para niños - Prepaga o suscríbete", 
     importe: "$851", 
     id: 3, 
+    stock: 4,
     imagen: "https://www.scdn.co/i/_global/open-graph-default.png"},
 
     {categoria: "Servicios", 
@@ -25,6 +28,7 @@ const productos = [
     descripcion: "Puedes ver en 1 dispositivo compatible a la vez - Películas, series y juegos móviles sin límite - Series y películas sin anuncios - Descarga en 1 dispositivo compatible a la vez - Puedes ver en HD", 
     importe: "$746", 
     id: 4, 
+    stock: 1,
     imagen: "https://s1.eestatic.com/2022/03/24/actualidad/659694554_222967910_864x486.jpg"},
 
     {categoria: "Servicios", 
@@ -32,6 +36,7 @@ const productos = [
     descripcion: "Puedes ver en 2 dispositivos compatibles a la vez - Películas, series y juegos móviles sin límite - Series y películas sin anuncios - Descarga en 2 dispositivos compatibles a la vez - Puedes ver en Full HD", 
     importe: "$1390", 
     id: 5, 
+    stock: 2,
     imagen: "https://s1.eestatic.com/2022/03/24/actualidad/659694554_222967910_864x486.jpg"},
 
     {categoria: "Servicios", 
@@ -39,6 +44,7 @@ const productos = [
     descripcion: "Puedes ver en 4 dispositivos compatibles a la vez - Películas, series y juegos móviles sin límite - Series y películas sin anuncios - Descarga en 4 dispositivos compatibles a la vez - Puedes ver en Ultra HD", 
     importe: "$2086", 
     id: 6, 
+    stock: 4,
     imagen: "https://s1.eestatic.com/2022/03/24/actualidad/659694554_222967910_864x486.jpg"},
 
     {categoria: "Electrónica", 
@@ -46,6 +52,7 @@ const productos = [
     descripcion: "Procesador: Ryzen 3 4300u - Ram: 8gb 2133mhz - HDD: 1TB - Bateria: 4 celdas 2200mAh", 
     importe: "$120000", 
     id: 7, 
+    stock: 5,
     imagen: "https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/4/F/4F438LT-1_T1649108533.png"},
 
     {categoria: "Electrónica", 
@@ -53,6 +60,7 @@ const productos = [
     descripcion: "Procesador: Ryzen 5 4600u - Ram: 16gb 2666mhz - HDD: 1TB - Bateria: 6 celdas 4400mAh", 
     importe: "$160000", 
     id: 8, 
+    stock: 5,
     imagen: "https://mauricomputacion.com.ar/images/productos/22625.webp"},
 
     {categoria: "Electrónica", 
@@ -60,6 +68,7 @@ const productos = [
     descripcion: "Procesador: Ryzen 7 4700u - Ram: 32gb 3200mhz - HDD: 2TB - SSD: 750Gb - Bateria: 9 celdas 6600mAh", 
     importe: "$200000", 
     id: 9, 
+    stock: 3,
     imagen: "https://cdn.shopify.com/s/files/1/2283/5833/products/121178f36959d9b060592f65be95feea6c03053c_d1c24a8a-1494-4abb-bff9-e2a662e07dac_600x.jpg?v=1663112415"},
 
     {categoria: "Electrónica", 
@@ -67,6 +76,7 @@ const productos = [
     descripcion: "Procesador: i5-12600HX - Ram: 8gb 2133mhz - HDD: 1TB - Bateria: 4 celdas 2200mAh", 
     importe: "$120000", 
     id: 10, 
+    stock: 5,
     imagen: "https://ar-media.hptiendaenlinea.com/catalog/product/cache/b3b166914d87ce343d4dc5ec5117b502/4/F/4F438LT-1_T1649108533.png"},
 
     {categoria: "Electrónica", 
@@ -74,6 +84,7 @@ const productos = [
     descripcion: "Procesador: i7-12800HX - Ram: 16gb 2666mhz - HDD: 1TB - Bateria: 6 celdas 4400mAh", 
     importe: "$160000", 
     id: 11, 
+    stock: 5,
     imagen: "https://mauricomputacion.com.ar/images/productos/22625.webp"},
 
     {categoria: "Electrónica", 
@@ -81,6 +92,7 @@ const productos = [
     descripcion: "Procesador: i7-12850HX - Ram: 32gb 3200mhz - HDD: 1TB - SSD: 750gb - Bateria: 9 celdas 6600mAh", 
     importe: "$200000", 
     id: 12, 
+    stock: 3,
     imagen: "https://cdn.shopify.com/s/files/1/2283/5833/products/121178f36959d9b060592f65be95feea6c03053c_d1c24a8a-1494-4abb-bff9-e2a662e07dac_600x.jpg?v=1663112415"},    
 
     {categoria: "Gaming", 
@@ -88,6 +100,7 @@ const productos = [
     descripcion: "DTS Headphone:X 7.1 - Soundscape crafted for pro gaming - Prism RGB Illumination", 
     importe: "$25000", 
     id: 13, 
+    stock: 7,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_750126-MLA31584086345_072019-O.jpg"},
 
     {categoria: "Gaming", 
@@ -95,6 +108,7 @@ const productos = [
     descripcion: "Deep, rich sound reproduction - 7,1 Surround with Dolby's ProLogic IIx and Dolby Headphone - Ultra comfortable earcups and suspension headband - Customizable soundscape with included USB soundcard", 
     importe: "$35000", 
     id: 14, 
+    stock: 9,
     imagen: "https://media.steelseriescdn.com/thumbs/catalogue/products/00691-siberia-650/b0cdb611b70647a99385c9a52463c3e9.png.1400x1120_q100_crop-fit_optimize.png"},
 
     {categoria: "Gaming", 
@@ -102,6 +116,7 @@ const productos = [
     descripcion: "Teclado mecánico para juegos, luz controlada por software y personalización macro, factor de forma compacto, retroiluminación LED RGB, interruptor lineal, rojo", 
     importe: "$15000", 
     id: 15, 
+    stock: 12,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_610369-MLA46596192452_072021-O.webp"},
 
     {categoria: "Gaming", 
@@ -109,6 +124,7 @@ const productos = [
     descripcion: "Factor de forma: TKL - Interruptores mecánicos:  HyperX1 Blue - Cuerpo: realizado en aluminio de grado aeronáutico - Cobertores para teclas de PBT:  con funciones secundarias impresas en el lateral de la tecla - Teclas RGB:  con retroiluminación y efectos radiantes de iluminación - Personalización con el software:  HyperX NGENUITY - Memoria interna: Sí - Modo Juego: Sí - Anti-ghosting: 100% - Compatibilidad: multiplataforma", 
     importe: "$27000", 
     id: 16, 
+    stock: 5,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_824385-MLA51631455577_092022-O.jpg"},
 
     {categoria: "Gaming", 
@@ -116,6 +132,7 @@ const productos = [
     descripcion: "Diseñado para la comodidad, el G403 está contorneado con empuñaduras de goma para un mayor control. El sensor HERO 25K permite realizar un seguimiento a nivel submicrónico. LIGHTSYNC RGB de espectro completo y 6 botones programables te dan el control.", 
     importe: "$9000", 
     id: 17, 
+    stock: 6,
     imagen: "https://centerelectronica.com.ar/wp-content/uploads/2020/11/g403_311-1ab4c64815b216f47815554422443403-1024-1024.jpg"},
 
     {categoria: "Gaming", 
@@ -123,6 +140,7 @@ const productos = [
     descripcion: "El diseño emblemático del G502 se combina con la tecnología inalámbrica LIGHTSPEED de calidad profesional para una conectividad ultrarrápida y fiable. El sensor HERO 25K cuenta con un seguimiento submicrónico. Compatible con POWERPLAY para una carga continua tanto en reposo como en juego.", 
     importe: "$18000", 
     id: 18, 
+    stock: 8,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_852700-MLA51184563351_082022-O.jpg"}    
 ]
 
