@@ -5,7 +5,7 @@ function CompraFinalizada() {
     const {ordenId} = useParams()
 
     return (
-    <div>
+    <div className='Agradecimiento'>
         <h1>Gracias por tu compra</h1>
         <h2>Tu codigo de compra es: {ordenId}</h2>
     </div>
