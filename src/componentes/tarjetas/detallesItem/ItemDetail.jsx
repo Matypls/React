@@ -5,22 +5,22 @@ import { useContext, useState } from "react";
 import { cartContext } from "../../../context/cartContext"
 import Boton from "../Boton"
 import {Link} from 'react-router-dom'
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ItemDetail({producto}) {
     const [isInCart, setIsInCart] = useState(false)
     const { agregarAlCarro } = useContext(cartContext)
     
     function onAddToCart (count){
-        alert(`agregaste ${count} items al carrito`) 
+        toast.success('Producto agregado al Carro')
         setIsInCart(count)
         agregarAlCarro(producto,count)
-        /* aca puedo agregar alerta de JS */
     }
 
     return (
         <div className='TarjetaDetalle'>
+            <ToastContainer/>
             <img className='ImagenItem' src={producto.imagen} alt="Imagen del producto" />
             <h3>{producto.nombre}</h3>
             <p>{producto.descripcion}</p>

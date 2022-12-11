@@ -25,17 +25,19 @@ function PaginaCarro() {
   }
   
   return (
-    <div>
+    <div className='Carro'>
       {cart.map((product) => (
       <div className='TarjetaCarro' key={product.id}>
           <img src={product.imagen} alt={product.nombre} />
           <h2>{product.nombre}</h2>
-          <h4>{product.importe}</h4>
-          <h4>unidades: {product.count}</h4>
+          <h4>Precio unitario: ${product.importe}</h4>
+          <h4>Unidades: {product.count}</h4>
+          <h4>Subtotal: ${product.importe * product.count}</h4>
           <Boton onClick={() => sacarItem(product.id)}color="red">Eliminar</Boton>
       </div>
       ))}
       <Formulario onSubmit={handleCheckout}></Formulario>
+      <h3>Total: ${precioTotalCarro()}</h3>
       <Boton onClick={vaciarCarro}>Vaciar Carro</Boton>
     </div>
   )

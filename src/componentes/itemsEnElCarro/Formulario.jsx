@@ -26,10 +26,10 @@ export default function Formulario(props) {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <div style={{ display: "flex", marginBottom: 8 }}>
+    <form onSubmit={onSubmit} className="Formulario">
+      <div>
         <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>
-          Nombre
+          Nombre:
         </label>
         <input
           required
@@ -39,9 +39,9 @@ export default function Formulario(props) {
           onChange={onInputChange}
         />
       </div>
-      <div style={{ display: "flex", marginBottom: 8 }}>
+      <div>
         <label htmlFor="email" style={{ width: "100px", marginRight: 4 }}>
-          Email
+          Email:
         </label>
         <input
           required
@@ -51,9 +51,9 @@ export default function Formulario(props) {
           onChange={onInputChange}
         />
       </div>
-      <div style={{ display: "flex", marginBottom: 8 }}>
+      <div>
         <label htmlFor="phone" style={{ width: "100px", marginRight: 4 }}>
-          Teléfono
+          Teléfono:
         </label>
         <input
           required
