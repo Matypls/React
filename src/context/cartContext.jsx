@@ -7,15 +7,17 @@ export function CartContextProvider(props){
     const [cart, setCart] = useState ([])
 
     function agregarAlCarro(product, count){
+
         let validarItemCarro = cart.findIndex( item => item.id === product.id)
         let nuevoCarro = [...cart]
-        if (validarItemCarro){
-            nuevoCarro[validadItemCarro].count += count
+        if (validarItemCarro !== -1){
+            nuevoCarro[validarItemCarro].count += count
+            setCart(nuevoCarro)
         } else {
             product.count = count
             nuevoCarro.push(product)
             setCart(nuevoCarro)
-        }
+        } 
     }
 
     function itemsEnElCarro(){
@@ -23,14 +25,21 @@ export function CartContextProvider(props){
         cart.forEach(itemsEnElCarro => total = total + itemsEnElCarro.count)
         return total
     }
+    
+    /* function sacarItem() */
 
-/*     function limpiarCarro(){}
+    function vaciarCarro(){
+        setCart([])
+    }
 
-    function eliminarItem(id){} */
-
+    function precioTotalCarro(){
+        let precioTotal = 0
+        cart.forEach((product) => (precioTotal = precioTotal + product.importe * product.cantidad))
+        return precioTotal
+    }
 
     return(
-        <cartContext.Provider value={{cart, agregarAlCarro, itemsEnElCarro}}>
+        <cartContext.Provider value={{cart, agregarAlCarro, itemsEnElCarro,  vaciarCarro, precioTotalCarro}}>
             {props.children}
         </cartContext.Provider>
     )

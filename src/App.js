@@ -5,6 +5,7 @@ import ItemListContainer from "./componentes/tarjetas/ItemListContainer";
 import {BrowserRouter, Routes , Route} from 'react-router-dom';
 import ItemDetailContainer from "./componentes/tarjetas/detallesItem/ItemDetailContainer";
 import { CartContextProvider } from "./context/cartContext";
+import PaginaCarro from "./componentes/itemsEnElCarro/PaginaCarro";
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
               <Route path="/" element={ <ItemListContainer />} />    
               <Route path="/category/:idCategory" element={ <ItemListContainer />} />    
               <Route path="/Item/:id" element={ <ItemDetailContainer/> }/> 
-              <Route path="*" element= {<p>Esta página no existe</p>}/>    
+              <Route path="/cart" element={ <PaginaCarro/> } />    
             </Routes>           
           </main>
         </body>

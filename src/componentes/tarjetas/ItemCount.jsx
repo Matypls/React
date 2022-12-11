@@ -24,7 +24,7 @@ function ItemCount({stock, onAddToCart}) {
         </Boton>
       </div>
       <div>
-        <button onClick={() => onAddToCart(count)}>Agregar {count} articulo/s al carrito</button>
+        <Boton onClick={() => onAddToCart(count)}>Agregar {count} articulo/s al carrito</Boton>
       </div>
     </div>
   )

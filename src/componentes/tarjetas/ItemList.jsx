@@ -13,6 +13,7 @@ function ItemList({products}) {
             imagen={product.imagen}
             nombre={product.nombre}
             importe={product.importe}
+            descuento={product.descuento}
           />
         );}
       )}
