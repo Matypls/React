@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from 'react'
 import ItemList from "./ItemList";
-import getItems  from "../services/firestore"
+import getItems, { getItemsByCategory }  from "../../services/firestore"
 import {useParams} from 'react-router-dom'
 import Cargando from "../carga/Cargando";
 
@@ -10,8 +10,13 @@ function ItemListContainer() {
   const { idCategory } = useParams()
   
   async function getItemsAsync() {
-    let respuesta = await getItems(idCategory);
-    setProductos(respuesta);
+    if( !idCategory ){
+      let respuesta = await getItems(idCategory);
+      setProductos(respuesta);
+    } else {
+      let respuesta = await getItemsByCategory(idCategory)
+      setProductos(respuesta)
+    }
   }
 
   useEffect(() => {

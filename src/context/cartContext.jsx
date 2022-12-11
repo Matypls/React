@@ -26,7 +26,9 @@ export function CartContextProvider(props){
         return total
     }
     
-    /* function sacarItem() */
+    function sacarItem(id) { 
+        setCart(cart.filter((item) => item.id !== id))
+    } 
 
     function vaciarCarro(){
         setCart([])
@@ -39,7 +41,7 @@ export function CartContextProvider(props){
     }
 
     return(
-        <cartContext.Provider value={{cart, agregarAlCarro, itemsEnElCarro,  vaciarCarro, precioTotalCarro}}>
+        <cartContext.Provider value={{cart, agregarAlCarro, itemsEnElCarro,  vaciarCarro, precioTotalCarro, sacarItem}}>
             {props.children}
         </cartContext.Provider>
     )

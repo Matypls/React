@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import React from 'react'
-import { getSingleItem } from "../../services/mockServices";
+import { getSingleItem } from "../../../services/firestore";
 import { useParams } from 'react-router-dom' 
 import Cargando from "../../carga/Cargando";
 

@@ -1,6 +1,6 @@
-import productos from "../../data/productos";
+import productos from "../data/productos";
 
-function getItems(idCategory) {
+export function getItems(idCategory) {
 
     return new Promise((resolve) => {
 
@@ -18,7 +18,7 @@ function getItems(idCategory) {
     });
 }
 
-export default getItems
+/* export default getItems */
 
 export function getSingleItem(idParam) {
 
@@ -30,3 +30,4 @@ export function getSingleItem(idParam) {
         }, 2000);
     });
 }
+

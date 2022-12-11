@@ -24,7 +24,7 @@ function ItemDetail({producto}) {
             <img className='ImagenItem' src={producto.imagen} alt="Imagen del producto" />
             <h3>{producto.nombre}</h3>
             <p>{producto.descripcion}</p>
-            <h4>{producto.importe}</h4>            
+            <h4>${producto.importe}</h4>            
             {isInCart ? (
                 <Link to="/cart">
                     <Boton>Ir al Carro</Boton>
