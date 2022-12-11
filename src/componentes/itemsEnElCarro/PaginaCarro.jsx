@@ -4,6 +4,7 @@ import Boton from '../tarjetas/Boton'
 import { crearOrden } from '../../services/firestore'
 import { useNavigate } from 'react-router-dom'
 import Formulario from './Formulario'
+import "./carro.css"
 
 function PaginaCarro() {
   const {cart, sacarItem, vaciarCarro, precioTotalCarro} = useContext(cartContext)
@@ -26,7 +27,7 @@ function PaginaCarro() {
   return (
     <div>
       {cart.map((product) => (
-      <div key={product.id}>
+      <div className='TarjetaCarro' key={product.id}>
           <img src={product.imagen} alt={product.nombre} />
           <h2>{product.nombre}</h2>
           <h4>{product.importe}</h4>

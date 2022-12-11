@@ -1,0 +1,4 @@
+.TarjetaCarro{
+    display: flex;
+    flex-direction: row;
+}
